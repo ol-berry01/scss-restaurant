@@ -6,6 +6,16 @@
     right: 5%;
     z-index: 300;
 
+    @media(max-width: 800px) {
+        width: 35px;
+        height: 35px;
+    }
+
+    @media(max-width: 500px) {
+        width: 25px;
+        height: 25px;
+    }
+
     .menu {
         @extend %fullSpace;
         display: flex;
@@ -20,6 +30,14 @@
             background-color: $colour-primary;
             transform-origin: right;
             transition: all 500ms 500ms;
+
+            @media(max-width: 800px) {
+                height: 3px;
+            }
+
+            @media(max-width: 500px) {
+                height: 2px;
+            }
         }
     }
 }
@@ -32,7 +50,21 @@
     border: 3px solid $colour-primary;
     border-radius: 50%;
     margin-right: 20px;
+    text-decoration: none;
     @include flexLayout;
+
+    @media(max-width: 1000px) {
+        font-size: 50px;
+        width: 90px;
+        height: 90px;
+    }
+
+    @media(max-width: 500px) {
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+        border-width: 2px;
+    }
 }
 
 .main-name {
@@ -40,6 +72,15 @@
     font-size: 50px;
     color: $colour-secondary;
     @include textStyles;
+
+    @media(max-width: 1000px) {
+        font-size: 40px;
+    }
+
+    @media(max-width: 500px) {
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 .sub-name {
@@ -48,14 +89,31 @@
     color: $colour-secondary;
     text-align: center;
     @include textStyles;
+
+    @media(max-width: 500px) {
+        font-size: 12px;
+    }
 }
 
 .main-heading {
     font-family: $font-dancingScript;
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 300;
     color: $colour-primary;
     margin-bottom: 40px;
+
+    @media(max-width: 1600px) {
+        font-size: 80px;
+    }
+
+    @media(max-width: 1000px) {
+        font-size: 60px;
+    }
+    
+    @media(max-width: 500px) {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
 }
 
 .sub-heading {
@@ -64,6 +122,26 @@
     font-weight: 300;
     color: $colour-secondary;
     margin-bottom: 80px;
+    text-align: center;
+
+    @media(max-width: 1600px) {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    @media(max-width: 1300px) {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    @media(max-width: 1000px) {
+        font-size: 30px;
+    }
+
+    @media(max-width: 500px) {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
 }
 
 .main-btn {
@@ -83,6 +161,18 @@
     &:hover {
         background-color: $colour-primary;
         color: $colour-dark;
+    }
+
+    @media(max-width: 800px) {
+        width: 150px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    @media(max-width: 500px) {
+        width: 130px;
+        height: 30px;
+        font-size: 10px;
     }
 }
 
@@ -111,14 +201,38 @@
         &-heading {
             font-family: $font-nunito;
             font-size: 50px;
-            @include textStyles(capitalize)
+            @include textStyles(capitalize);
+
+            @media(max-width: 900px) {
+                font-size: 35px;
+            }
+
+            @media(max-width: 650px) {
+                font-size: 25px;
+            }
+
+            @media(max-width: 500px) {
+                display: none;
+            }
         }
 
         &-paragraph {
             font-family: $font-josefinSans;
             font-size: 30px;
             margin-bottom: 30px;
-            @include textStyles(capitalize)
+            @include textStyles(capitalize);
+
+            @media(max-width: 900px) {
+                font-size: 20px;
+            }
+
+            @media(max-width: 650px) {
+                font-size: 15px;
+            }
+
+            @media(max-width: 500px) {
+                display: none;
+            }
         }
 
         &-btn {
@@ -134,6 +248,18 @@
             border-radius: 30px;
             outline: none;
             cursor: pointer;
+
+            @media(max-width: 900px) {
+                font-size: 12px;
+                width: 130px;
+                height: 30px;
+            }
+
+            @media(max-width: 650px) {
+                font-size: 10px;
+                width: 100px;
+                height: 30px;
+            }
         }
     }
 
