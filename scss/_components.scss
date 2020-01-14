@@ -1,0 +1,61 @@
+.logo {
+    color: $colour-primary;
+    font-size: 70px;
+    width: 110px;
+    height: 110px;
+    border: 3px solid $colour-primary;
+    border-radius: 50%;
+    margin-right: 20px;
+    @include flexLayout;
+}
+
+.main-name {
+    font-family: $font-nunito;
+    font-size: 50px;
+    color: $colour-secondary;
+    @include textStyles;
+}
+
+.sub-name {
+    font-family: $font-josefinSans;
+    font-size: 18px;
+    color: $colour-secondary;
+    text-align: center;
+    @include textStyles;
+}
+
+.main-heading {
+    font-family: $font-dancingScript;
+    font-size: 100px;
+    font-weight: 300;
+    color: $colour-primary;
+    margin-bottom: 40px;
+}
+
+.sub-heading {
+    font-family: $font-josefinSans;
+    font-size: 60px;
+    font-weight: 300;
+    color: $colour-secondary;
+    margin-bottom: 80px;
+}
+
+.main-btn {
+    width: 170px;
+    height: 45px;
+    font-family: $font-josefinSans;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $colour-primary;
+    background-color: transparent;
+    border: 1px solid $colour-primary;
+    outline: none;
+    cursor: pointer;
+    transition: all 400ms;
+
+    &:hover {
+        background-color: $colour-primary;
+        color: $colour-dark;
+    }
+}
